@@ -26,7 +26,7 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">Bienvenue {{name}}</h1>
+      <h1 class="header center orange-text">Bienvenue <?php echo $name; ?></h1>
       <div class="row center">
         <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
       </div>
@@ -41,7 +41,7 @@
 
   <div class="container">
     <div class="section">
-		{{content()}}
+		<?php echo $this->getContent(); ?>
       <!--   Icon Section   -->
       <div class="row">
     </div>
